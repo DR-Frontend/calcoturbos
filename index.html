@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[HTML name]</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--link rel="stylesheet" media="(max-width: 768px)" href="[mobile css link]">
+  <link rel="stylesheet" media="(max-width: 1024px)" href="[tablet css link]">
+  <link rel="stylesheet" media="(max-width: 1920px)" href="[desk css link]"-->
+  <script defer src="js/includes.js"></script>
+  <script defer src="js/menu.js"></script>
+  <link rel="icon" type="image/x-icon" href="[link]">
+  <meta name="keywords" content="[keywords]">
+  <meta name="description" content="[description]">
+  <meta name="categories" content="[categories]">
+  <meta name="author" content="[author-name]">
+</head>
+<body>
+  <div data-include="incs/header.html"></div>
+
+  <main>
+    <section id="home""" class="home">
+      <div class="home__layer"></div>
+      <div class="home__title">
+        <h1>CALCO TURBOS</h1>
+        <p>Especialistas en reparación y venta de Turbos Diesel</p>
+      </div>
+      <video class="home__video" muted autoplay loop>
+        <source src="assets/videos/calco1.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__wrapp">
+        <img class="about__img" src="assets/photos/turbo6.jpg" alt="">
+        <div class="about__txt">
+          <h2>¿QUIÉNES SOMOS?</h2><br>
+          <p>'Calco Turbos' es una empresa mexicana dedicada a la venta y re manufacturación de turbocompresores e inyectores de combustible para motores a diésel.</p><br>
+          <p>Gracias a nuestros expertos calificados, otorgamos un servicio inmediato, profesional y un precio competitivo dentro del mercado. Contamos con el mejor equipo y maquinaria con tecnología avanzada para proporcionar los mejores resultados maximizando el efecto y la mejora del turbo e inyectores.</p><br>
+          <div class="about__txt-logos">
+            <img src="assets/svgs/Borg.svg" alt="">
+            <img src="assets/svgs/Holset.svg" alt="">
+            <img src="assets/svgs/Garrett.svg" alt="">
+            <img src="assets/svgs/Bosch.svg" alt="">
+            <img src="assets/svgs/Delphi.svg" alt="">
+            <img src="assets/svgs/Denso.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="path1" class="path1"></div>
+
+    <section id="commitments" class="commitments">
+      <div class="commitments__layer"></div>
+      <div class="commitments__wrapp">
+        <h2>COMPROMISOS</h2>
+
+        <p>En Calco Turbos tenemos el compromiso con nuestros clientes de brindar los mejores beneficios a nuestros clientes para darle una mayor vida a su turbo o inyector. Lo anterior se ve reflejado en su satisfacción, ya que, el cliente adquiere un turbo o inyector totalmente nuevo a costo de uno remanufacturado.</p><br>
+
+        <div class="commitments__cards">
+          <div class="commitments__card">
+            <div class="commitments__card-img">
+              <img src="assets/svgs/replace.svg" alt="">
+            </div>
+            <p>
+              Cambiar y reparar las piezas de sus turbos e inyectores con la calidad que nos destaca de la competencia.
+            </p>
+          </div>
+
+          <div class="commitments__card">
+            <div class="commitments__card-img">
+              <img src="assets/svgs/warranty.svg" alt="">
+            </div>
+            <p>
+              Otorgar una garantía de 6 meses sobre nuestros trabajos por cualquier desperfecto.
+            </p>
+          </div>
+
+          <div class="commitments__card">
+            <div class="commitments__card-img">
+              <img src="assets/svgs/shipping.svg" alt="">
+            </div>
+            <p>
+              Recolectar y entregar los turbos e inyectores en cualquier parte del país (previo acuerdo con el cliente).
+            </p>
+          </div>
+
+          <div class="commitments__card">
+            <div class="commitments__card-img">
+              <img src="assets/svgs/offer.svg" alt="">
+            </div>
+            <p>
+              Mejorar cualquier precio que presente el mercado.
+            </p>
+          </div>
+
+          <div class="commitments__card">
+            <div class="commitments__card-img">
+              <img src="assets/svgs/deal.svg" alt="">
+            </div>
+            <p>
+              Atención personalizada, amable y honesta con el cliente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="path2" class="path2"></div>
+
+    <section id="contact" class="contact">
+      <div class="contact__wrapp">
+        <div class="contact__mail">
+          <h2>CONTACTO</h2>
+          <form action="php/enviar.php" method="post" class="contact__mail-form">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required>
+            <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required>
+            <textarea name="message" name="mensaje" id="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn">ENVIAR</button>
+          </form>
+        </div>
+
+        <div class="contact__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3760.7932527839102!2d-98.8509595!3d19.5075288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e79061cfd439%3A0x22104d704b32e1dd!2sFraccionamiento%20Granjas%20Molino%20de%20Flores!5e0!3m2!1ses-419!2smx!4v1658277924555!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="incs/footer.html"></div>
+</body>
+</html>

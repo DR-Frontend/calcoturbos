@@ -1,0 +1,101 @@
+/*** GLOBAL STYLES ***/
+:root{
+   --max-width: 1920px;
+   --font-size: 16px;
+   --primary-color: #cc1517;
+   --secondary-color: #303030;
+   --tertiary-color: #e0e0e0;
+   --background-color: #640000;
+}
+@font-face {
+   font-family: "Title";
+   src: url(../assets/fonts/Lato/Lato-Light.ttf);
+}
+@font-face {
+   font-family: "Subtitle";
+   src: url(../assets/fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+   font-family: "Text";
+   src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+   font-family: "Link";
+   src: url(../assets/fonts/Lato/Lato-Black.ttf);
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   vertical-align: baseline;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+html{
+   scroll-behavior: smooth;
+}
+body{
+   color: var(--tertiary-color);
+   background-color: var(--background-color);
+   overflow-x: hidden;
+}
+img, picture, video, iframe, figure{
+   max-width: 100%;
+   width: 100%;
+   height: auto;
+   display: block;
+}
+a{
+   display: block;
+}
+li{
+   list-style: none;
+}
+svg{
+   width: 100%;
+   display: block;
+   fill: currentColor;
+}
+h1, h2, h3, h4, h5, h6,
+p, a, b, u, i, em,
+span, strong, blockquote{
+   font-weight: inherit;
+   font-style: inherit;
+   text-decoration: none;
+   color: inherit;
+}
+h1{
+   font-family: "Title";
+   font-size: 3rem;
+}
+h2{
+   font-family: "Title";
+   font-size: 2.5rem;
+}
+p, li, span{
+   font-family: "Text";
+   font-size: 1rem;
+}
+a{
+   font-family: "Link";
+   font-size: 0.937rem;
+}
+.btn{
+   width: 200px;
+   height: 40px;
+   color: var(--tertiary-color);
+   border-radius: 40px;
+   background-color: rgba(255,255,255,.3);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all .3s ease;
+   cursor: pointer;
+}
+.btn:hover{
+   background-color: var(--primary-color);
+}

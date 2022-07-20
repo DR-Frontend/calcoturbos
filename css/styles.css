@@ -1,0 +1,360 @@
+/*** MENU ***/
+
+/*** HEADER ***/
+.header{
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  color: var(--tertiary-color);
+  background-color: rgba(0,0,0,.2);
+  border-bottom: 1px solid rgba(255,255,255,.3);
+} 
+.header__wrapper-menu{
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(15px);
+}
+.header__wrapper-logo{
+  width: 150px;
+}
+.header__wrapper-hamburger{
+  width: 30px;
+  cursor: pointer;
+}
+.header__wrapper-links{
+  backdrop-filter: blur(15px);
+  width: 100%;
+  padding: 30px 0;
+  position: absolute;
+  top: 72px;
+  left: 105%;
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+}
+.header__wrapper-links a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__wrapper-links img{
+  width: 25px;
+  margin-right: 10px;
+}
+@media (min-width: 768px){
+  .header__wrapper-menu{
+    padding: 15px 20%;
+  }
+}
+
+
+
+/* HOME */
+.home{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.home__layer,
+.home__video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home__layer{
+  background-color: var(--secondary-color);
+  opacity: .5;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+.home__title{
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+.home__video{
+  object-fit: cover;
+}
+@media(min-width: 768px) {
+  .home__title{
+    width: fit-content;
+    text-align: left;
+    transform: translate(-90%, -50%);
+    border-left: 5px solid var(--primary-color);
+  }
+  .home__title h1{
+    font-size: 4rem;
+    padding-left: 10px;
+  }
+  .home__title p{
+    padding-left: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+
+
+/* ABOUT */
+.about{
+  margin-top: -10px;
+  padding: 80px 0 30px 0;
+  background: linear-gradient(175deg, rgba(100,0,0,1) 15%, rgba(204,21,23,1) 50%, rgba(100,0,0,1) 75%);
+}
+.about__wrapp{
+  width: 80%;
+  margin: auto;
+}
+.about__img{
+  margin-bottom: 20px;
+}
+.about__txt{
+  text-align: center;
+}
+.about__txt-logos img{
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+}
+@media (min-width: 768px){
+  .about__wrapp{
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    align-items: center;
+    padding: 20px 0 20px 20px;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 5px;
+    
+  }
+  .about__img{
+    margin-bottom: unset;
+  }
+  .about__txt{
+    padding: 0 50px;
+  }
+  .about__txt-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+  }
+  .about__txt-logos img{
+    width: 80px;
+    margin: unset;
+  }
+}
+
+
+
+/* PATH1 */
+.path1{
+  margin-top: -3px;
+  width: 100%;
+  height: 80px;
+  clip-path: polygon(0 0, 100% 0, 100% 15%, 0% 100%);
+  background: #630001;
+}
+
+
+
+
+/* COMMITMENTS */
+.commitments{
+  margin-top: -90px;
+  padding: 130px 0 100px;
+  position: relative;
+  z-index: -1;
+  background-image: url(../assets/photos/turbo3.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.commitments__layer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  mix-blend-mode: overlay;
+}
+.commitments__wrapp{
+  width: 80%;
+  margin: auto;
+  padding: 30px 20px 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0,0,0,.2);
+}
+.commitments__wrapp h2{
+  font-size: 2rem;
+}
+.commitments__cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 30%));
+  justify-content: center;
+  gap: 20px;
+}
+.commitments__card{
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.commitments__card-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.commitments__card-img img{
+  height: 80px;
+  width: auto;
+}
+
+
+/* PATH 2*/
+.path2{
+  margin-top: -78px;
+  width: 100%;
+  height: 80px;
+  clip-path: polygon(100% 15%, 0 100%, 100% 100%);
+  background: #630000;
+}
+
+
+
+/* CONTACT */
+.contact{
+  background: linear-gradient(178deg, rgba(100,0,0,1) 15%, rgba(204,21,23,1) 50%, rgba(100,0,0,1) 75%);
+}
+.contact__wrapp{
+  width: 80%;
+  padding: 50px 0;
+  margin: auto;
+}
+.contact__mail{
+  margin-bottom: 20px;
+}
+.contact__mail-form input[type=text],
+.contact__mail-form input[type=email]{
+  width: 100%;
+  height: 35px;
+  font-size: 1.2rem;
+  margin-top: 25px;
+  color: var(--tertiary-color);
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+.contact__mail-form textarea{
+  width: 100%;
+  color: var(--tertiary-color);
+  resize: none;
+  margin: 20px 0;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  font-family: "Text";
+  font-size: 1.2rem;
+}
+.contact__mail-form input:focus-visible,
+.contact__mail-form textarea:focus-visible{
+  outline: none;
+}
+.contact__map{
+  margin-top: 50px;
+}
+.contact__map iframe{
+  height: 50vh;
+  border-radius: 10px;
+}
+::placeholder{
+  color: var(--tertiary-color);
+  opacity: .3;
+}
+@media(min-width: 768px){
+  .contact__wrapp{
+    display: grid;
+    grid-template-columns: 1fr 60%;
+    align-items: center;
+    padding: 70px 0;
+  }
+  .contact__mail{
+    padding: 50px;
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 10px;
+  }
+  .contact__map{
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+
+
+/* FOOTER */
+.footer{
+  background-color: var(--secondary-color);
+}
+.footer__wrapper{
+  width: 80%;
+  padding: 50px 0;
+  margin: auto;
+  text-align: center;
+  
+  display: grid;
+  grid-template-areas:
+  "copy"
+  "address"
+  "contact";
+  gap: 40px;
+}
+.footer__address{
+  display: block;
+  grid-area: address;
+}
+.footer__copy{
+  grid-area: copy;
+}
+.footer__contact{
+  grid-area: contact;
+}
+.footer__copy img{
+  width: 150px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.footer__copy p{
+  font-size: .7rem;
+}
+.footer__contact-p{
+  display: flex;
+  justify-content: center;
+}
+.footer__contact-p a{
+  margin-left: 5px;
+}
+@media(min-width: 768px){
+  .footer__wrapper{
+    grid-template-areas: "address copy contact";
+  }
+}
